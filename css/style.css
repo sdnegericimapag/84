@@ -49,10 +49,15 @@ body {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
+  font-size: 12px;                     /* Ukuran font menu */
+  font-family: 'Arial', sans-serif;   /* Font menu */
+
 }
 
 .navbar-menu li a:hover {
   background-color: #008CBA;
+  color: yellow;                       /* Warna saat hover */
+
 }
 
 /* Banner */
@@ -71,4 +76,5 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
