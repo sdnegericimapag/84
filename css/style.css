@@ -12,6 +12,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  position: fixed; /* agar navbar diam saat scroll */
+  font-size: 22px;
 }
 
 .navbar-brand {
@@ -19,6 +21,7 @@
   align-items: center;
   color: white;
   font-weight: bold;
+  font-size: 9px;
 }
 
 .navbar-brand img {
@@ -59,3 +62,4 @@
   padding: 30px;
   text-align: center;
 }
+
