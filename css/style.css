@@ -1,42 +1,74 @@
-/* Memberi jarak antara navbar dan banner */
-.banner {
-  margin-top: 10px; /* jarak kecil agar tidak terlalu lebar */
-}
-
-/* style.css */
+/* Navbar */
 .navbar {
   background-color: #00B0F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-brand .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar-menu a:hover {
+  background-color: #008CBA;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #00B0F0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 180px;
+}
+
+.dropdown-menu li a {
   padding: 10px;
 }
 
-.navbar a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* Logo di navbar */
-.navbar-brand img {
-  height: 50px;   /* tinggi logo */
-  width: auto;    /* biar proporsional */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Banner */
 .banner img {
-  max-height: 400px;   /* batasi tinggi banner */
-  object-fit: cover;   /* biar tidak ketarik */
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 
-/* Font untuk menu navbar */
-.navbar-nav .nav-link {
-  font-size: 16px;     /* ukuran font menu utama */
-  font-weight: 500;    /* agak tebal biar jelas */
+/* Konten */
+.content {
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* Font untuk dropdown menu */
-.dropdown-menu .dropdown-item {
-  font-size: 15px;     /* sedikit lebih kecil dari menu utama */
-  font-weight: 400;    /* normal */
-
-}
-
