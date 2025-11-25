@@ -1,0 +1,28 @@
+/* Memberi jarak antara navbar dan banner */
+.banner {
+  margin-top: 10px; /* jarak kecil agar tidak terlalu lebar */
+}
+
+/* Logo di navbar */
+.navbar-brand img {
+  height: 50px;   /* tinggi logo */
+  width: auto;    /* biar proporsional */
+}
+
+/* Banner */
+.banner img {
+  max-height: 400px;   /* batasi tinggi banner */
+  object-fit: cover;   /* biar tidak ketarik */
+}
+
+/* Font untuk menu navbar */
+.navbar-nav .nav-link {
+  font-size: 16px;     /* ukuran font menu utama */
+  font-weight: 500;    /* agak tebal biar jelas */
+}
+
+/* Font untuk dropdown menu */
+.dropdown-menu .dropdown-item {
+  font-size: 15px;     /* sedikit lebih kecil dari menu utama */
+  font-weight: 400;    /* normal */
+}
