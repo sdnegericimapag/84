@@ -5,66 +5,47 @@
   box-sizing: border-box;
 }
 
-/* Sidebar Navbar */
-.sidebar {
-  width: 250px;
+/* Navbar */
+.navbar {
   background-color: #00B0F0;
-  height: 100vh;
-  position: fixed;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
   color: white;
+  font-weight: bold;
 }
 
-.logo {
-  text-align: center;
-  margin-bottom: 30px;
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
 }
 
-.logo img {
-  width: 60px;
-  height: auto;
-}
-
-.logo h2 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.menu {
+.navbar-menu {
   list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu a {
+.navbar-menu li a {
   color: white;
   text-decoration: none;
-  display: block;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 4px;
 }
 
-.menu a:hover {
+.navbar-menu li a:hover {
   background-color: #008CBA;
-}
-
-/* Dropdown */
-.dropdown .submenu {
-  display: none;
-  list-style: none;
-  margin-left: 10px;
-}
-
-.dropdown:hover .submenu {
-  display: block;
 }
 
 /* Banner */
 .banner {
-  margin-left: 250px;
-  position: relative;
+  margin-top: 2px; /* jarak 2px dari navbar */
 }
 
 .banner img {
@@ -73,19 +54,8 @@
   object-fit: cover;
 }
 
-.banner-text {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
 /* Konten */
 .content {
-  margin-left: 250px;
   padding: 30px;
   text-align: center;
 }
