@@ -3,6 +3,18 @@
   margin-top: 10px; /* jarak kecil agar tidak terlalu lebar */
 }
 
+/* style.css */
+.navbar {
+  background-color: #00B0F0;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
 /* Logo di navbar */
 .navbar-brand img {
   height: 50px;   /* tinggi logo */
@@ -25,4 +37,5 @@
 .dropdown-menu .dropdown-item {
   font-size: 15px;     /* sedikit lebih kecil dari menu utama */
   font-weight: 400;    /* normal */
+
 }
