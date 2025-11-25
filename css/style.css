@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Font global (opsional) */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Ganti dengan font favoritmu */
+}
+
 /* Navbar */
 .navbar {
   background-color: #00B0F0;
@@ -12,13 +17,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  font-size: 18px;                     /* Ukuran font navbar */
+  color: white;                        /* Warna font navbar */
+  font-family: 'Segoe UI', sans-serif; /* Font navbar */
 }
 
+/* Brand (logo + nama sekolah) */
 .navbar-brand {
   display: flex;
   align-items: center;
-  color: white;
   font-weight: bold;
+  font-size: 18px;                     /* Ukuran font nama sekolah */
+  color: white;
+  font-family: 'Georgia', serif;       /* Font nama sekolah */
+
 }
 
 .navbar-brand img {
@@ -59,3 +71,4 @@
   padding: 30px;
   text-align: center;
 }
+
