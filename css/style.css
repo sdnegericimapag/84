@@ -42,6 +42,7 @@ body {
   list-style: none;
   display: flex;
   gap: 15px;
+   margin-left: -10px; /* Geser sedikit ke kiri */
 }
 
 .navbar-menu li a {
@@ -49,7 +50,7 @@ body {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
-  font-size: 12px;                     /* Ukuran font menu */
+  font-size: 14px;                     /* Ukuran font menu */
   font-family: 'Arial', sans-serif;   /* Font menu */
 
 }
@@ -76,5 +77,6 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
