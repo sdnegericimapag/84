@@ -25,6 +25,17 @@
 .dropdown-menu .dropdown-item {
   font-size: 15px;     /* sedikit lebih kecil dari menu utama */
   font-weight: 400;    /* normal */
+}
 
+/* style.css */
+.navbar {
+  background-color: #00B0F0;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
