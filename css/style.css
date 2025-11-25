@@ -9,6 +9,10 @@
   width: auto;    /* biar proporsional */
 }
 
+.navbar {
+  background-color: #00B0F0;
+}
+
 /* Banner */
 .banner img {
   max-height: 400px;   /* batasi tinggi banner */
@@ -25,4 +29,5 @@
 .dropdown-menu .dropdown-item {
   font-size: 15px;     /* sedikit lebih kecil dari menu utama */
   font-weight: 400;    /* normal */
+
 }
