@@ -118,12 +118,12 @@ body {
 /* Teks di banner */
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 80%;
   transform: translateY(-50%);
   font-family: 'Impact', sans-serif; /* bisa diganti */
   font-size: 32px; /* bisa diubah */
   color: #FFD700; /* warna font bisa diubah */
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* shadow */
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7); /* shadow */
   font-weight: bold;
 }
 
@@ -143,5 +143,6 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
