@@ -26,6 +26,7 @@ html, body {
   padding: 10px 20px;
   font-size: 18px;
   color: white;
+   position: fixed; /* agar navbar diam saat scroll */
 }
 
 .navbar-brand {
@@ -171,3 +172,4 @@ html, body {
   border-radius: 8px;
   min-width: 200px;
 }
+
