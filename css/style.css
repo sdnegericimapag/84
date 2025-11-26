@@ -7,9 +7,12 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Segoe UI', sans-serif;
   background: #ffffff;
+  overflow-x: hidden;              /* cegah melebar */
+  word-break: break-word;          /* pecah kata panjang */
+  overflow-wrap: break-word;       /* pecah teks panjang */
 }
 
 /* ============================
@@ -25,7 +28,6 @@ body {
   color: white;
 }
 
-/* Brand (logo + teks) */
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -40,18 +42,15 @@ body {
   margin-right: 10px;
 }
 
-/* ============================
-   MENU UTAMA
-============================ */
 .navbar-menu {
   list-style: none;
   display: flex;
   gap: 15px;
-  margin-left: -10px; /* sesuai permintaan */
+  margin-left: 0;          /* FIX AGAR TIDAK MENYERET LAYAR */
 }
 
 .navbar-menu li {
-  position: relative; /* untuk dropdown */
+  position: relative;
 }
 
 .navbar-menu li a {
@@ -106,8 +105,9 @@ body {
    BANNER
 ============================ */
 .banner {
-   position: relative; /* agar teks bisa absolute */
+  position: relative;
   margin-top: 2px;
+  overflow: hidden;   /* cegah overflow */
 }
 
 .banner img {
@@ -115,48 +115,59 @@ body {
   max-height: 400px;
   object-fit: cover;
 }
+
 /* Teks di banner */
 .banner-text {
   position: absolute;
   top: 90%;
   transform: translateY(-50%);
-  
-  font-size: 32px; /* bisa diubah */
-   font-style: italic;
-  color: white; /* warna font bisa diubah */
+  font-size: 32px;
+  font-style: italic;
+  color: white;
   text-shadow: 
-   0 6px 9px rgba(255,255,255,0.7),
-   0 0 13px rgba(0,0,0,0.6);
+    0 6px 9px rgba(255,255,255,0.7),
+    0 0 13px rgba(0,0,0,0.6);
+  max-width: 90%;        /* cegah teks masuk overflow */
 }
 
 /* Posisi kiri dan kanan */
 .banner-text.left {
-  left: 60px;
-   font-size: 16px; /* bisa diubah */
-   font-family: 'Trebuchet MS', sans-serif; /* bisa diganti */
+  left: 20px;            /* dari 60px → FIX responsif */
+  font-size: 16px;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .banner-text.right {
-  right: 60px;
-   font-size: 28px; /* bisa diubah */
-   font-family: 'Mistral', sans-serif; /* bisa diganti */
+  right: 20px;           /* dari 60px → FIX responsif */
+  font-size: 28px;
+  font-family: 'Mistral', sans-serif;
 }
 
 /* ============================
-   KONTEN
+   KONTEN 2 KOLOM
 ============================ */
 .content {
+  display: flex;
+  gap: 20px;
   padding: 30px;
-  text-align: center;
+  flex-wrap: wrap;       /* FIX penting agar tidak melebar */
+  max-width: 100%;
 }
 
+.left-section {
+  flex: 2;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  outline: 2px solid #cccccc;
+  text-align: left;
+  min-width: 250px;
+}
 
-
-
-
-
-
-
-
-
-
+.right-section {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 200px;
+}
