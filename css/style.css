@@ -246,4 +246,12 @@ p {
   }
 }
 
-
+/* Hover universal untuk semua H1 dan H2 di seluruh halaman */
+.section-box h1:hover,
+.section-box h2:hover,
+h1:hover,
+h2:hover {
+  color: #0a7cff;     /* warna hover */
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
