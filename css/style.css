@@ -127,8 +127,6 @@ body {
   text-shadow: 
    0 6px 9px rgba(255,255,255,0.7),
    0 0 13px rgba(0,0,0,0.6);
-
-  font-weight: bold;
 }
 
 /* Posisi kiri dan kanan */
@@ -149,6 +147,7 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
 
