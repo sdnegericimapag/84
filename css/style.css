@@ -10,7 +10,8 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #ffffff;
-  overflow-x: hidden; /* cegah melebar */
+  overflow-x: hidden;
+  padding-top: 75px; /* Agar konten tidak tertutup navbar fixed */
 }
 
 /* ============================
@@ -47,11 +48,11 @@ p {
   padding: 12px 20px;
   color: white;
 
-  position: fixed;       /* >>> NAVBAR DIAM SAAT SCROLL */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;         /* supaya di atas semua elemen */
+  z-index: 1000;
 }
 
 .navbar-brand {
@@ -164,12 +165,23 @@ p {
 }
 
 /* ============================
-   LAYOUT 2 KOLOM (Halaman tertentu)
+   LAYOUT 2 KOLOM
 ============================= */
+
 .content {
   display: flex;
   gap: 20px;
   padding: 30px;
+
+  max-width: 1200px; /* agar tidak melebar */
+  margin: auto;      /* center */
+  width: 100%;
+  overflow: hidden;  /* cegah overflow */
+}
+
+.left-section, 
+.right-section {
+  min-width: 0; /* FIX melebar di flexbox */
 }
 
 .left-section {
@@ -202,6 +214,7 @@ p {
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
+    padding: 20px;
   }
 
   .banner-text.left {
