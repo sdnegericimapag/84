@@ -1,52 +1,78 @@
 /* ============================
    RESET
-============================ */
+============================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+body {
   font-family: 'Segoe UI', sans-serif;
   background: #ffffff;
-  overflow-x: hidden;              /* cegah melebar */
-  word-break: break-word;          /* pecah kata panjang */
-  overflow-wrap: break-word;       /* pecah teks panjang */
+  overflow-x: hidden; /* cegah melebar */
+}
+
+/* ============================
+   TYPOGRAPHY GLOBAL
+============================= */
+h1 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 32px;
+  color: #004A7F;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+h1:hover {
+  color: #007ACC;
+  transform: translateX(4px);
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
 /* ============================
    NAVBAR
-============================ */
+============================= */
 .navbar {
   background-color: #00B0F0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 12px 20px;
   color: white;
+
+  position: fixed;       /* >>> NAVBAR DIAM SAAT SCROLL */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;         /* supaya di atas semua elemen */
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
   font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 42px;
   margin-right: 10px;
 }
 
+/* Menu */
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 15px;
-  margin-left: 0;          /* FIX AGAR TIDAK MENYERET LAYAR */
+  gap: 18px;
+  margin-left: -10px;
 }
 
 .navbar-menu li {
@@ -56,11 +82,10 @@ html, body {
 .navbar-menu li a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
   padding: 8px 12px;
   border-radius: 4px;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  display: block;
+  transition: 0.25s ease;
 }
 
 .navbar-menu li a:hover {
@@ -70,18 +95,17 @@ html, body {
 
 /* ============================
    DROPDOWN
-============================ */
+============================= */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background: #00698E;
-  list-style: none;
   min-width: 180px;
-  border-radius: 5px;
+  background: #00698E;
+  border-radius: 6px;
   padding: 8px 0;
-  z-index: 50;
+  list-style: none;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
@@ -90,10 +114,9 @@ html, body {
 }
 
 .dropdown-menu li a {
+  display: block;
   padding: 10px 15px;
   white-space: nowrap;
-  font-size: 14px;
-  color: white;
 }
 
 .dropdown-menu li a:hover {
@@ -103,11 +126,10 @@ html, body {
 
 /* ============================
    BANNER
-============================ */
+============================= */
 .banner {
   position: relative;
   margin-top: 2px;
-  overflow: hidden;   /* cegah overflow */
 }
 
 .banner img {
@@ -116,42 +138,38 @@ html, body {
   object-fit: cover;
 }
 
-/* Teks di banner */
 .banner-text {
   position: absolute;
   top: 90%;
   transform: translateY(-50%);
-  font-size: 32px;
-  font-style: italic;
-  color: white;
-  text-shadow: 
+  text-shadow:
     0 6px 9px rgba(255,255,255,0.7),
     0 0 13px rgba(0,0,0,0.6);
-  max-width: 90%;        /* cegah teks masuk overflow */
+  color: white;
 }
 
-/* Posisi kiri dan kanan */
+/* Kiri */
 .banner-text.left {
-  left: 20px;            /* dari 60px → FIX responsif */
+  left: 60px;
   font-size: 16px;
   font-family: 'Trebuchet MS', sans-serif;
+  font-style: italic;
 }
 
+/* Kanan */
 .banner-text.right {
-  right: 20px;           /* dari 60px → FIX responsif */
+  right: 60px;
   font-size: 28px;
   font-family: 'Mistral', sans-serif;
 }
 
 /* ============================
-   KONTEN 2 KOLOM
-============================ */
+   LAYOUT 2 KOLOM (Halaman tertentu)
+============================= */
 .content {
   display: flex;
   gap: 20px;
   padding: 30px;
-  flex-wrap: wrap;       /* FIX penting agar tidak melebar */
-  max-width: 100%;
 }
 
 .left-section {
@@ -161,7 +179,6 @@ html, body {
   border-radius: 8px;
   outline: 2px solid #cccccc;
   text-align: left;
-  min-width: 250px;
 }
 
 .right-section {
@@ -169,5 +186,31 @@ html, body {
   background: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
-  min-width: 200px;
+}
+
+.right-section h2 {
+  margin-bottom: 10px;
+}
+
+.right-section ul {
+  padding-left: 18px;
+}
+
+/* ============================
+   RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .banner-text.left {
+    left: 20px;
+    font-size: 14px;
+  }
+
+  .banner-text.right {
+    right: 20px;
+    font-size: 20px;
+  }
 }
