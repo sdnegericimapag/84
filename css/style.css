@@ -120,7 +120,7 @@ body {
   position: absolute;
   top: 80%;
   transform: translateY(-50%);
-  font-family: 'Impact', sans-serif; /* bisa diganti */
+  
   font-size: 32px; /* bisa diubah */
    font-style: italic;
   color: white; /* warna font bisa diubah */
@@ -131,13 +131,15 @@ body {
 
 /* Posisi kiri dan kanan */
 .banner-text.left {
-  left: 30px;
+  left: 60px;
    font-size: 16px; /* bisa diubah */
+   font-family: 'Trebuchet MS', sans-serif; /* bisa diganti */
 }
 
 .banner-text.right {
-  right: 30px;
+  right: 60px;
    font-size: 22px; /* bisa diubah */
+   font-family: 'Mistral', sans-serif; /* bisa diganti */
 }
 
 /* ============================
@@ -147,6 +149,7 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
 
