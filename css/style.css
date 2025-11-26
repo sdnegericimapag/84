@@ -118,7 +118,7 @@ body {
 /* Teks di banner */
 .banner-text {
   position: absolute;
-  top: 80%;
+  top: 90%;
   transform: translateY(-50%);
   
   font-size: 32px; /* bisa diubah */
@@ -138,7 +138,7 @@ body {
 
 .banner-text.right {
   right: 60px;
-   font-size: 22px; /* bisa diubah */
+   font-size: 28px; /* bisa diubah */
    font-family: 'Mistral', sans-serif; /* bisa diganti */
 }
 
@@ -149,6 +149,7 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
 
