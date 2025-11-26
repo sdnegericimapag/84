@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Negeri Cimapag</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS KHUSUS HALAMAN INI SAJA (tidak bentrok dengan style.css) -->
+  <style>
+    .page-container {
+      max-width: 1100px;
+      margin: 120px auto 40px; /* diberi jarak karena navbar fixed */
+      padding: 20px;
+    }
+
+    .section-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      outline: 2px solid #e0e0e0;
+      margin-bottom: 25px;
+    }
+
+    .section-box > * + * {
+      margin-top: 12px;
+    }
+
+    .section-box h1,
+    .section-box h2 {
+      text-align: left;
+    }
+
+    .section-box p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="img/logocimapag.png" alt="Logo Sekolah">
+      <span>SD Negeri Cimapag</span>
+    </div>
+
+    <ul class="navbar-menu">
+      <li><a href="index.html">Beranda</a></li>
+
+      <li class="dropdown">
+        <a href="#">Profil ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="logo.html">Logo</a></li>
+          <li><a href="visimisi.html">Visi & Misi</a></li>
+          <li><a href="identitas.html">Identitas Sekolah</a></li>
+          <li><a href="about.html">Tentang Sekolah</a></li>
+        </ul>
+      </li>
+
+      <li><a href="guru.html">Guru</a></li>
+
+      <li class="dropdown">
+        <a href="#">Kegiatan ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+          <li><a href="o2sn.html">O2SN</a></li>
+          <li><a href="pentaspai.html">Pentas PAI</a></li>
+          <li><a href="ftbi.html">FTBI</a></li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+        </ul>
+      </li>
+
+      <li><a href="dokumentasi.html">Dokumentasi</a></li>
+    </ul>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <img src="img/bannercimapag.jpg" alt="Banner Sekolah">
+    <div class="banner-text left">Besok Adalah Hari Menikmati Hasil Belajarmu Hari Ini</div>
+    <div class="banner-text right">Teks Kanan</div>
+  </div>
+
+  <!-- CONTENT WRAPPER -->
+  <div class="page-container">
+
+    <div class="section-box">
+      <h1>Selamat Datang di SD Negeri Cimapag</h1>
+      <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
+      <p>Isi lain bisa Anda tambahkan di sini...</p>
+    </div>
+
+    <div class="section-box">
+      <h2>Pengumuman</h2>
+      <p>Contoh isi pengumuman sekolah.</p>
+    </div>
+
+    <div class="section-box">
+      <h2>Kontak Kami</h2>
+      <p>
+        Alamat, telepon, dan informasi lain…
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
