@@ -8,18 +8,50 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  
 <style>
-        /* Layout 1 kolom */ 
-        .content {
-          display: flex;
-          gap: 20px;
-          flex: 2;
-          background: #ffffff;
-          padding: 20px;
-          border-radius: 8px;
-          outline: 2px solid #cccccc;   /* ← ini tambahan */
-          text-align: left;     /* ← supaya teks tidak center */
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    /* Pembungkus semua isi agar tidak mepet ke pinggir */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    /* Kotak section */
+    .section-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      outline: 2px solid #e0e0e0;
+      margin-bottom: 25px;     /* jarak antar section */
+    }
+
+    /* Jarak antar elemen dalam satu section */
+    .section-box > * + * {
+      margin-top: 12px;
+    }
+
+    h1, h2 {
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
   </style>
   <!-- Navbar -->
   <nav class="navbar">
@@ -68,18 +100,33 @@
     <div class="banner-text right">Teks Kanan</div>
   </div>
 
-  <!-- Konten -->
-  <main class="content">
-    <h1>Selamat Datang di SD Negeri Cimapag</h1>
-    <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
-  </main>
-  <main class="content">
-    <h1>Selamat Datang di SD Negeri Cimapag</h1>
-    <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
-  </main>
+   <div class="container">
+
+    <!-- SECTION 1 -->
+    <div class="section-box">
+      <h1>Selamat Datang di SD Negeri Cimapag</h1>
+      <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
+      <p>Isi lain bisa Anda tambahkan di sini...</p>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section-box">
+      <h2>Pengumuman</h2>
+      <p>Contoh isi pengumuman sekolah.</p>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section-box">
+      <h2>Kontak Kami</h2>
+      <p>Alamat, telepon, dan informasi lainnya.</p>
+    </div>
+
+  </div>
+
 
 </body>
 </html>
+
 
 
 
