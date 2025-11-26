@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #ffffff;
+  background: #E5F8FF;
   overflow-x: hidden;
   padding-top: 75px; /* Agar konten tidak tertutup navbar fixed */
 }
@@ -255,3 +255,4 @@ h2:hover {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
