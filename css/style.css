@@ -11,6 +11,16 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: #ffffff;
 }
+/* Fix width agar tidak melebar di GitHub Pages */
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* ============================
    NAVBAR
@@ -149,6 +159,7 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
 
