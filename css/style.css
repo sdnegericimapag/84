@@ -131,13 +131,13 @@ body {
 
 /* Posisi kiri dan kanan */
 .banner-text.left {
-  left: 20px;
-   font-size: 18px; /* bisa diubah */
+  left: 10px;
+   font-size: 16px; /* bisa diubah */
 }
 
 .banner-text.right {
-  right: 20px;
-   font-size: 14px; /* bisa diubah */
+  right: 10px;
+   font-size: 22px; /* bisa diubah */
 }
 
 /* ============================
@@ -147,6 +147,7 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
 
