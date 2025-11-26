@@ -122,18 +122,24 @@ body {
   transform: translateY(-50%);
   font-family: 'Impact', sans-serif; /* bisa diganti */
   font-size: 32px; /* bisa diubah */
-  color: #FFD700; /* warna font bisa diubah */
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.7); /* shadow */
+   font-style: italic;
+  color: white; /* warna font bisa diubah */
+  text-shadow: 
+   0 6px 9px rgba(255,255,255,0.7),
+   0 0 13px rgba(0,0,0,0.6);
+
   font-weight: bold;
 }
 
 /* Posisi kiri dan kanan */
 .banner-text.left {
   left: 20px;
+   font-size: 18px; /* bisa diubah */
 }
 
 .banner-text.right {
   right: 20px;
+   font-size: 14px; /* bisa diubah */
 }
 
 /* ============================
@@ -143,6 +149,7 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 
 
 
