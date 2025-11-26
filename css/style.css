@@ -208,6 +208,30 @@ p {
   padding-left: 18px;
 }
 
+.saran-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.saran-container {
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  outline: 2px solid #cccccc;
+}
+
+.saran-container h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.saran-container p {
+  margin-bottom: 20px;
+}
+
 /* ============================
    RESPONSIVE
 ============================= */
@@ -227,3 +251,4 @@ p {
     font-size: 20px;
   }
 }
+
