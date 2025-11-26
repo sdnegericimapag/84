@@ -10,35 +10,50 @@
 
   <!-- CSS KHUSUS HALAMAN INI SAJA (tidak bentrok dengan style.css) -->
   <style>
-    .page-container {
-      max-width: 1100px;
-      margin: 120px auto 40px; /* diberi jarak karena navbar fixed */
-      padding: 20px;
-    }
+  /* Wrapper halaman */
+  .page-container {
+    max-width: 1100px;
+    margin: 40px auto; /* JARAK SUDAH DISESUAIKAN */
+    padding: 20px;
+  }
 
-    .section-box {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 10px;
-      outline: 2px solid #e0e0e0;
-      margin-bottom: 25px;
-    }
+  /* Kotak section */
+  .section-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    outline: 2px solid #e0e0e0;
+    margin-bottom: 25px;
+  }
 
-    .section-box > * + * {
-      margin-top: 12px;
-    }
+  /* Jarak antar elemen dalam section */
+  .section-box > * + * {
+    margin-top: 12px;
+  }
 
-    .section-box h1,
-    .section-box h2 {
-      text-align: left;
-    }
+  /* Judul */
+  .section-box h1,
+  .section-box h2 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    color: #222;
+  }
 
-    .section-box p {
-      font-size: 16px;
-      color: #333;
-      line-height: 1.6;
-    }
-  </style>
+  /* Paragraf */
+  .section-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* FIX JARAK BANNER → SECTION (PALING PENTING!) */
+  .banner {
+    margin-bottom: -20px; /* NAIKKAN SECTION KE ATAS */
+  }
+</style>
+
 </head>
 
 <body>
@@ -112,3 +127,4 @@
 
 </body>
 </html>
+
