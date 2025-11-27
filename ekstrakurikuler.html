@@ -195,7 +195,7 @@ document.getElementById("siteSearchForm").addEventListener("submit", function(e)
 document.getElementById("siteSearchInput").addEventListener("keyup", function(e){
   let keyword = e.target.value.toLowerCase();
 
-  if (keyword.length < 2) return; // minimal 2 huruf
+  if (keyword.length < 4) return; // minimal 2 huruf
 
   let found = pages.find(p => p.title.toLowerCase().includes(keyword));
 
@@ -207,6 +207,7 @@ document.getElementById("siteSearchInput").addEventListener("keyup", function(e)
 
 </body>
 </html>
+
 
 
 
