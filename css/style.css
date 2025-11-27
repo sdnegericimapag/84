@@ -315,13 +315,8 @@ h2:hover {
   font-size: 14px;
   cursor: pointer;
 }
-/* SOCIAL ICONS */
-.footer-social {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
-}
 
+/* SOCIAL ICONS */
 .social-icons a i {
   width: 35px;
   height: 35px;
@@ -387,6 +382,7 @@ h2:hover {
   padding-left: 0px; /* sesuaikan, ini sudah pas untuk teks yang kamu pakai */
   margin-top: 3px;
 }
+
 
 
 
