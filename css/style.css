@@ -343,13 +343,14 @@ h2:hover {
   text-align: center;
   padding: 15px;
   font-size: 15px;
-  font-style: normal;
+  font-style: italic;
 }
 
 .school-red {
   color: red;
   font-weight: bold;
 }
+
 
 
 
