@@ -332,7 +332,6 @@ h2:hover {
 
 /* Warna sosial media */
 .social-icons a:nth-child(1) { background: #3b5998; } /* FB */
-.social-icons a:nth-child(2) { background: #1da1f2; } /* Twitter */
 .social-icons a:nth-child(3) { background: #f1c40f; color: black; } /* IG */
 .social-icons a:nth-child(4) { background: #e74c3c; } /* YouTube */
 
@@ -358,6 +357,7 @@ h2:hover {
 .tags a:hover span {
   color: #FFD500;            /* warna saat hover */
 }
+
 
 
 
