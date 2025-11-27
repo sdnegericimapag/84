@@ -95,15 +95,7 @@
 
       <li><a href="dokumentasi.html">Dokumentasi</a></li>
     </ul>
-    <form id="siteSearchForm" style="margin-left:20px;">
-  <input 
-    type="text" 
-    id="siteSearchInput" 
-    placeholder="Cari halaman..."
-    style="padding:6px 12px; border-radius:6px; border:1px solid #ccc; width:180px;"
-  >
-</form>
-
+   
   </nav>
 
   <!-- BANNER -->
@@ -178,38 +170,5 @@
   </div>
 </footer>
   
-<script>
-// Daftar halaman yang ingin dicari
-const pages = [
-  { title: "Beranda", url: "index.html" },
-  { title: "Profil", url: "profil.html" },
-  { title: "Kontak", url: "kontak.html" },
-  { title: "Ekstrakurikuler", url: "ekstrakurikuler.html" },
-  { title: "Pengumuman", url: "pengumuman.html" },
-  { title: "Berita", url: "berita.html" }
-];
-
-document.getElementById("siteSearchForm").addEventListener("submit", function(e){
-  e.preventDefault();
-});
-
-document.getElementById("siteSearchInput").addEventListener("keyup", function(e){
-  let keyword = e.target.value.toLowerCase();
-
-  if (keyword.length < 4) return; // minimal 2 huruf
-
-  let found = pages.find(p => p.title.toLowerCase().includes(keyword));
-
-  if (found) {
-    window.location.href = found.url;
-  }
-});
-</script>
-
 </body>
 </html>
-
-
-
-
-
