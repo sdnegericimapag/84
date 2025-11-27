@@ -5,55 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SD Negeri Cimapag</title>
+
+  <!-- CSS utama -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
   
-<style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <!-- CSS KHUSUS HALAMAN INI SAJA (tidak bentrok dengan style.css) -->
+  <style>
+  /* Wrapper halaman */
+  .page-container {
+    max-width: 1100px;
+    margin: 40px auto; /* JARAK SUDAH DISESUAIKAN */
+    padding: 20px;
+  }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-    }
+  /* Kotak section */
+  .section-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    outline: 2px solid #e0e0e0;
+    margin-bottom: 25px;
+  }
 
-    /* Pembungkus semua isi agar tidak mepet ke pinggir */
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 20px;
-    }
+  /* Jarak antar elemen dalam section */
+  .section-box > * + * {
+    margin-top: 12px;
+  }
 
-    /* Kotak section */
-    .section-box {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 10px;
-      outline: 2px solid #e0e0e0;
-      margin-bottom: 25px;     /* jarak antar section */
-    }
+  /* Judul */
+  .section-box h1,
+  .section-box h2 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    color: #222;
+  }
 
-    /* Jarak antar elemen dalam satu section */
-    .section-box > * + * {
-      margin-top: 12px;
-    }
+  /* Paragraf */
+  .section-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+  }
 
-    h1, h2 {
-      text-align: left;
-    }
+  /* FIX JARAK BANNER → SECTION (PALING PENTING!) */
+  .banner {
+    margin-bottom: -20px; /* NAIKKAN SECTION KE ATAS */
+  }
+</style>
 
-    p {
-      text-align: left;
-      font-size: 16px;
-      color: #333;
-      line-height: 1.6;
-    }
-  </style>
-  <!-- Navbar -->
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="navbar-brand">
       <img src="img/logocimapag.png" alt="Logo Sekolah">
@@ -63,7 +70,6 @@
     <ul class="navbar-menu">
       <li><a href="index.html">Beranda</a></li>
 
-      <!-- PROFIL DROPDOWN -->
       <li class="dropdown">
         <a href="#">Profil ▾</a>
         <ul class="dropdown-menu">
@@ -76,7 +82,6 @@
 
       <li><a href="guru.html">Guru</a></li>
 
-      <!-- KEGIATAN DROPDOWN -->
       <li class="dropdown">
         <a href="#">Kegiatan ▾</a>
         <ul class="dropdown-menu">
@@ -90,7 +95,6 @@
 
       <li><a href="dokumentasi.html">Dokumentasi</a></li>
     </ul>
-
     <form id="siteSearchForm" style="margin-left:20px;">
   <input 
     type="text" 
@@ -102,38 +106,78 @@
 
   </nav>
 
-  <!-- Banner -->
+  <!-- BANNER -->
   <div class="banner">
     <img src="img/bannercimapag.jpg" alt="Banner Sekolah">
-    <!-- Tambahan teks kiri dan kanan -->
     <div class="banner-text left">Besok Adalah Hari Menikmati Hasil Belajarmu Hari Ini</div>
     <div class="banner-text right">Teks Kanan</div>
   </div>
 
-   <div class="container">
+  <!-- CONTENT WRAPPER -->
+  <div class="page-container">
 
-    <!-- SECTION 1 -->
     <div class="section-box">
       <h1>Selamat Datang di SD Negeri Cimapag</h1>
       <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
       <p>Isi lain bisa Anda tambahkan di sini...</p>
     </div>
 
-    <!-- SECTION 2 -->
     <div class="section-box">
       <h2>Pengumuman</h2>
       <p>Contoh isi pengumuman sekolah.</p>
     </div>
 
-    <!-- SECTION 3 -->
     <div class="section-box">
       <h2>Kontak Kami</h2>
-      <p>Alamat, telepon, dan informasi lainnwwwwwww wwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwww 
-        eeeeeeeeeeeeeeee eeeeeeeeeeeeeeeee eeeeeeeeeeeeeeeeeeeeee a.</p>
+      <p>
+        Alamat, telepon, dan informasi lain…
+      </p>
+    </div>
+
+  </div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- KOLOM 1 -->
+    <div class="footer-column">
+      <h3>Hubungi Kami</h3>
+      <p>SD Negeri Cimapag</p>
+
+      <p><i class="fa-solid fa-location-dot"></i> Alamat: Desa Cimapag, Sukabumi</p>
+      <p><i class="fa-solid fa-phone"></i> Telepon: 0812-3456-7890</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: sdn.cimapag@example.com</p>
+    </div>
+
+    <!-- KOLOM 2 -->
+    <div class="footer-column">
+      <h3>Tags</h3>
+      <div class="tags">
+        <span>PENGUMUMAN</span>
+        <span>SEKILAS INFO</span>
+        <span>BERITA</span>
+      </div>
+    </div>
+
+    <!-- KOLOM 3 -->
+    <div class="footer-column">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </div>
 
   </div>
 
+  <div class="footer-bottom">
+    Copyright ©2025 
+    <span class="school-red">SD Negeri Cimapag</span>. 
+    All rights reserved.
+  </div>
+</footer>
+  
 <script>
 // Daftar halaman yang ingin dicari
 const pages = [
@@ -164,13 +208,6 @@ document.getElementById("siteSearchInput").addEventListener("keyup", function(e)
 
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
