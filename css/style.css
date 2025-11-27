@@ -364,16 +364,18 @@ h2:hover {
   align-items: flex-start;
 }
 
-.footer-location i {
-  margin-top: 3px; /* sejajarkan ikon dengan teks */
+.footer-location {
+  display: grid;
+  grid-template-columns: 18px auto;
 }
 
 /* Baris kedua masuk ke dalam, tidak sejajar ikon */
 .footer-address {
   display: block;
-  padding-left: 63px; /* sesuaikan, ini sudah pas untuk teks yang kamu pakai */
+  padding-left: 0px; /* sesuaikan, ini sudah pas untuk teks yang kamu pakai */
   margin-top: 3px;
 }
+
 
 
 
