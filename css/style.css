@@ -315,25 +315,37 @@ h2:hover {
   font-size: 14px;
   cursor: pointer;
 }
-
 /* SOCIAL ICONS */
-.social-icons a {
-  text-decoration: none;
-  color: white;
-  margin-right: 10px;
-  font-size: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
 }
 
-/* Warna sosial media */
-.social-icons a:nth-child(1) { background: #3b5998; } /* FB */
-.social-icons a:nth-child(3) { background: #f1c40f; color: black; } /* IG */
-.social-icons a:nth-child(4) { background: #e74c3c; } /* YouTube */
+.social-icons a i {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0; /* hilangkan ikon Font Awesome */
+}
+
+/* Facebook */
+.footer-social a i.fa-facebook-f {
+  background-image: url('../img/facebook.png');
+}
+
+/* Instagram */
+.footer-social a i.fa-instagram {
+  background-image: url('../img/instagram.png');
+}
+
+/* YouTube */
+.footer-social a i.fa-youtube {
+  background-image: url('../img/youtube.png');
+}
 
 /* COPYRIGHT BAR */
 .footer-bottom {
@@ -375,6 +387,7 @@ h2:hover {
   padding-left: 0px; /* sesuaikan, ini sudah pas untuk teks yang kamu pakai */
   margin-top: 3px;
 }
+
 
 
 
