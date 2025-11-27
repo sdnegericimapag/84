@@ -358,6 +358,24 @@ h2:hover {
   color: #FFD500;            /* warna saat hover */
 }
 
+/* Perataan alamat agar baris kedua sejajar dengan teks di baris pertama */
+.footer-location {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-location i {
+  margin-top: 3px; /* sejajarkan ikon dengan teks */
+}
+
+/* Baris kedua masuk ke dalam, tidak sejajar ikon */
+.footer-address {
+  display: block;
+  padding-left: 63px; /* sesuaikan, ini sudah pas untuk teks yang kamu pakai */
+  margin-top: 3px;
+}
+
+
 
 
 
