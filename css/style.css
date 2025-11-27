@@ -13,6 +13,63 @@ body {
   overflow-x: hidden;
   padding-top: 75px; /* Agar konten tidak tertutup navbar fixed */
 }
+/* ==== SEARCH MODAL ==== */
+#searchModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-modal-box {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.search-modal-box input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-modal-box button {
+  padding: 10px 20px;
+  background: #00AEEF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-modal-box button:hover {
+  background: #007BB5;
+}
+
+.close-search {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#searchResult {
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  margin-top: 10px;
+}
 
 /* ============================
    TYPOGRAPHY GLOBAL
@@ -377,6 +434,7 @@ h2:hover {
   padding-left: 0px; /* sesuaikan, ini sudah pas untuk teks yang kamu pakai */
   margin-top: 3px;
 }
+
 
 
 
