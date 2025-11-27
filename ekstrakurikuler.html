@@ -169,36 +169,9 @@
   </div>
 </footer>
   
-<script>
-// Daftar halaman yang ingin dicari
-const pages = [
-  { title: "Beranda", url: "index.html" },
-  { title: "Profil", url: "profil.html" },
-  { title: "Kontak", url: "kontak.html" },
-  { title: "Ekstrakurikuler", url: "ekstrakurikuler.html" },
-  { title: "Pengumuman", url: "pengumuman.html" },
-  { title: "Berita", url: "berita.html" }
-];
-
-document.getElementById("siteSearchForm").addEventListener("submit", function(e){
-  e.preventDefault();
-});
-
-document.getElementById("siteSearchInput").addEventListener("keyup", function(e){
-  let keyword = e.target.value.toLowerCase();
-
-  if (keyword.length < 2) return; // minimal 2 huruf
-
-  let found = pages.find(p => p.title.toLowerCase().includes(keyword));
-
-  if (found) {
-    window.location.href = found.url;
-  }
-});
-</script>
-
 </body>
 </html>
+
 
 
 
