@@ -261,7 +261,7 @@ h2:hover {
 /* ========================== */
 
 .footer {
-  background-color: ##00B0F0; /* Biru langit terang */
+  background-color: #00B0F0; /* Biru langit terang */
   color: white;
   padding: 40px 20px 20px;
 }
@@ -349,4 +349,5 @@ h2:hover {
   color: red;
   font-weight: bold;
 }
+
 
