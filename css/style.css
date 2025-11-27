@@ -350,6 +350,15 @@ h2:hover {
   color: red;
   font-weight: bold;
 }
+.tags a span {
+  color: white;              /* warna awal */
+  transition: 0.3s;
+}
+
+.tags a:hover span {
+  color: #FFD500;            /* warna saat hover */
+}
+
 
 
 
