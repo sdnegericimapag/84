@@ -56,8 +56,44 @@
 </style>
 
 </head>
+  <!-- SEARCH -->
+<script>
+document.getElementById("openSearch").onclick = function() {
+  document.getElementById("searchModal").style.display = "flex";
+};
+
+document.querySelector(".close-search").onclick = function() {
+  document.getElementById("searchModal").style.display = "none";
+};
+
+document.getElementById("searchButton").onclick = function() {
+  let keyword = document.getElementById("searchInput").value.toLowerCase();
+  let bodyText = document.body.innerText.toLowerCase();
+  let resultBox = document.getElementById("searchResult");
+
+  if(!keyword) {
+    resultBox.innerHTML = "<p>Ketik kata terlebih dahulu.</p>";
+    return;
+  }
+
+  if(bodyText.includes(keyword)) {
+    resultBox.innerHTML = "<p><strong>Ditemukan:</strong> kata '"+keyword+"'</p>";
+  } else {
+    resultBox.innerHTML = "<p>Tidak ditemukan kata tersebut.</p>";
+  }
+};
+</script>
 
 <body>
+  <!-- SEARCH -->
+  <div id="searchModal">
+  <div class="search-modal-box">
+    <span class="close-search">&times;</span>
+    <input type="text" id="searchInput" placeholder="Cari di website...">
+    <button id="searchButton">Cari</button>
+    <div id="searchResult"></div>
+  </div>
+</div>
 
   <!-- NAVBAR -->
   <nav class="navbar">
@@ -94,6 +130,8 @@
 
       <li><a href="dokumentasi.html">Dokumentasi</a></li>
     </ul>
+    <!-- SEARCH -->
+    <i class="fa-solid fa-search" id="openSearch"></i>
 
   </nav>
 
@@ -177,6 +215,7 @@
 
 </body>
 </html>
+
 
 
 
