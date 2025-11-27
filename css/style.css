@@ -342,7 +342,7 @@ h2:hover {
   background-color: #00759E; /* hijau terang seperti contoh */
   text-align: center;
   padding: 15px;
-  font-size: 15px;
+  font-size: 12px;
   font-style: italic;
 }
 
@@ -350,6 +350,7 @@ h2:hover {
   color: red;
   font-weight: bold;
 }
+
 
 
 
