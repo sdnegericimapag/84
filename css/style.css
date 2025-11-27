@@ -256,37 +256,96 @@ h2:hover {
   transition: 0.2s ease-in-out;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  background-color: #005f99; /* samakan warna dengan navbar */
+/* ========================== */
+/*          FOOTER            */
+/* ========================== */
+
+.footer {
+  background-color: #1e4d1c; /* hijau gelap seperti contoh */
   color: white;
-  padding: 25px 20px;
-  text-align: center;
-  margin-top: 40px;
+  padding: 40px 20px 20px;
 }
 
-footer .footer-container {
-  max-width: 1100px;
+.footer-container {
+  max-width: 1200px;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-footer .footer-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 15px;
+.footer-column {
+  flex: 1;
+  min-width: 250px;
 }
 
-footer p {
-  margin: 8px 0;
-  font-size: 16px;
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 6px;
 }
 
-footer i {
-  margin-right: 8px;
+/* Garis judul putih → kuning */
+.footer-column h3::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(to right, white 0%, #e6c200 100%);
+  margin-top: 5px;
 }
 
-footer .school-red {
+.footer-column p {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.footer-column i {
+  margin-right: 7px;
+}
+
+/* TAG BOX */
+.tags span {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+/* Warna sosial media */
+.social-icons a:nth-child(1) { background: #3b5998; } /* FB */
+.social-icons a:nth-child(2) { background: #1da1f2; } /* Twitter */
+.social-icons a:nth-child(3) { background: #f1c40f; color: black; } /* IG */
+.social-icons a:nth-child(4) { background: #e74c3c; } /* YouTube */
+
+/* COPYRIGHT BAR */
+.footer-bottom {
+  margin-top: 25px;
+  background-color: #009933; /* hijau terang seperti contoh */
+  text-align: center;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.school-red {
   color: red;
   font-weight: bold;
 }
-
