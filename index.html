@@ -73,6 +73,23 @@
     }
 }
 
+   .float-img {
+    width: 150px;          /* ubah sesuai keinginan */
+    float: left;           /* gambar di kiri */
+    margin-right: 15px;    /* jarak antara gambar dan teks */
+    margin-bottom: 10px;   /* jarak bawah agar teks tidak menempel */
+}
+
+/* Agar di HP gambar tidak rusak */
+@media (max-width: 600px) {
+    .float-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+}
+
+
     </style>
   
   <!-- Navbar -->
@@ -130,7 +147,7 @@
   <main class="content">
      <div class="left-section">
   <div class="info-box">
-    <img src="img/logosekolah.png" alt="Foto Sekolah">
+    <img src="img/logosekolah.png" alt="Foto Sekolah" class="float-img">
     
     <div class="text-content">
       <h1>Selamat Datang di SD Negeri Cimapag</h1>
@@ -241,6 +258,7 @@ Salam hangat,
 
 </body>
 </html>
+
 
 
 
