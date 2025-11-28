@@ -41,6 +41,38 @@
         .right-section ul {
           padding-left: 18px;
         }
+   
+   /* GAMBAR UPLOAD Atur ukuran gambar sesuka hati */
+   .info-box {
+    display: flex;
+    align-items: center;       /* gambar dan teks sejajar */
+    gap: 20px;                 /* jarak antara gambar dan teks */
+}
+
+/* Atur ukuran gambar sesuka hati */
+.info-box img {
+    width: 150px;             /* ubah 150px sesuai keinginan */
+    height: auto;
+    border-radius: 10px;      /* optional */
+}
+
+/* Biar teks rapi */
+.text-content {
+    flex: 1;
+}
+
+/* Responsive: jika layar kecil, gambar naik ke atas */
+@media (max-width: 600px) {
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-box img {
+        width: 120px;
+    }
+}
+
     </style>
   
   <!-- Navbar -->
@@ -97,10 +129,17 @@
   <!-- Konten -->
   <main class="content">
      <div class="left-section">
-    <h1>Selamat Datang di SD Negeri Cimapag</h1>
-       <img src="img/logosekolah.png" alt="Foto Guru">
-    <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
-    <p>Isi lain bisa Anda tambahkan di sini jjjjjjjjjjjjjjjjjjjjjjjjjjmmmmkkkkk kkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmjjjjk.. .</p>
+  <div class="info-box">
+    <img src="img/logosekolah.png" alt="Foto Sekolah">
+    
+    <div class="text-content">
+      <h1>Selamat Datang di SD Negeri Cimapag</h1>
+      <p>Ini adalah template sederhana untuk website sekolah Anda.</p>
+      <p>Isi lain bisa Anda tambahkan di sini jjjjjjjjjjjjjjj...</p>
+    </div>
+  </div>
+</div>
+
   </div>
 
   <div class="right-section">
@@ -195,6 +234,7 @@
 
 </body>
 </html>
+
 
 
 
