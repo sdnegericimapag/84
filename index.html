@@ -43,49 +43,60 @@
         }
    
    /* GAMBAR UPLOAD Atur ukuran gambar sesuka hati */
-   .info-box {
+  .welcome-section {
     display: flex;
-    align-items: center;       /* gambar dan teks sejajar */
-    gap: 20px;                 /* jarak antara gambar dan teks */
+    gap: 20px;
+    background: #E7F7FF;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #c5e7f7;
+    align-items: flex-start;
 }
 
-/* Atur ukuran gambar sesuka hati */
-.info-box img {
-    width: 150px;             /* ubah 150px sesuai keinginan */
+.welcome-section img {
+    width: 160px; /* ubah sesuka hati */
     height: auto;
-    border-radius: 10px;      /* optional */
+    flex-shrink: 0;
 }
 
-/* Biar teks rapi */
-.text-content {
+.text-box {
     flex: 1;
 }
 
-/* Responsive: jika layar kecil, gambar naik ke atas */
-@media (max-width: 600px) {
-    .info-box {
-        flex-direction: column;
+.text-box h1 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #004c7f;
+}
+
+.text-box p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* ============================
+   RESPONSIVE UNTUK HP
+   ============================ */
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column; /* gambar pindah ke atas */
+        text-align: left;
+    }
+
+    .welcome-section img {
+        width: 130px;       /* perkecil otomatis di HP */
+        margin: 0 auto;     /* center */
+        display: block;
+    }
+
+    .text-box h1 {
+        font-size: 24px;    /* judul lebih pas di HP */
         text-align: center;
     }
-
-    .info-box img {
-        width: 120px;
-    }
-}
-
-   .float-img {
-    width: 150px;          /* ubah sesuai keinginan */
-    float: left;           /* gambar di kiri */
-    margin-right: 15px;    /* jarak antara gambar dan teks */
-    margin-bottom: 10px;   /* jarak bawah agar teks tidak menempel */
-}
-
-/* Agar di HP gambar tidak rusak */
-@media (max-width: 600px) {
-    .float-img {
-        float: none;
-        display: block;
-        margin: 0 auto 15px auto;
+    
+    .text-box p {
+        text-align: justify;
+        font-size: 16px;
     }
 }
 
@@ -145,24 +156,20 @@
 
   <!-- Konten -->
   <main class="content">
-     <div class="left-section">
-  <div class="info-box">
-    <img src="img/logosekolah.png" alt="Foto Sekolah" class="float-img">
-    
-    <div class="text-content">
-      <h1>Selamat Datang di SD Negeri Cimapag</h1>
-      <p>Assalamu’alaikum warahmatullahi wabarakatuh..</p>
-      <p>Selamat datang di website resmi SD Negeri Cimapag.
- Website ini kami hadirkan sebagai sarana informasi, komunikasi, dan publikasi kegiatan sekolah kepada masyarakat luas.
-Melalui situs ini, kami berkomitmen memberikan informasi terkini seputar kegiatan pembelajaran, pengumuman penting, prestasi siswa, dan inovasi sekolah.
-Terima kasih atas dukungan seluruh warga sekolah dan masyarakat yang selalu berpartisipasi aktif dalam meningkatkan mutu pendidikan di SD Negeri Cimapag.
-Salam hangat,
- Kepala Sekolah SD Negeri Cimapag
- Siti Mariam, S.Pd.
-</p>
-    </div>
-  </div>
-</div>
+
+  <div class="welcome-section">
+
+      <img src="img/logosekolah.png" alt="Logo SD">
+
+      <div class="text-box">
+          <h1>Selamat Datang di SD Negeri Cimapag</h1>
+
+          <p>Assalamu’alaikum warahmatullahi wabarakatuh..</p>
+
+          <p>Selamat datang di website resmi SD Negeri Cimapag. Website ini kami hadirkan sebagai sarana informasi, komunikasi, dan publikasi kegiatan sekolah kepada masyarakat luas. Melalui situs ini, kami berkomitmen memberikan informasi terkini seputar kegiatan pembelajaran, pengumuman penting, prestasi siswa, dan inovasi sekolah. Terima kasih atas dukungan seluruh warga sekolah dan masyarakat yang selalu berpartisipasi aktif dalam meningkatkan mutu pendidikan di SD Negeri Cimapag.</p>
+
+          <p>Salam hangat, Kepala Sekolah SD Negeri Cimapag Siti Mariam, S.Pd.</p>
+      </div>
 
   </div>
 
@@ -258,6 +265,7 @@ Salam hangat,
 
 </body>
 </html>
+
 
 
 
