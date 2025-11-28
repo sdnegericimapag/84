@@ -43,7 +43,24 @@
         }
    
    /* GAMBAR UPLOAD Atur ukuran gambar sesuka hati */
-  .welcome-section {
+  /* Layout utama */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Kolom kiri */
+.left-column {
+    flex: 3;
+}
+
+/* Kolom kanan */
+.right-column {
+    flex: 1;
+}
+
+/* Kotak sambutan */
+.welcome-section {
     display: flex;
     gap: 20px;
     background: #E7F7FF;
@@ -53,20 +70,17 @@
     align-items: flex-start;
 }
 
+/* Gambar */
 .welcome-section img {
-    width: 160px; /* ubah sesuka hati */
-    height: auto;
+    width: 140px;
     flex-shrink: 0;
 }
 
-.text-box {
-    flex: 1;
-}
-
+/* Teks */
 .text-box h1 {
     margin-top: 0;
-    font-size: 28px;
     color: #004c7f;
+    font-size: 28px;
 }
 
 .text-box p {
@@ -74,32 +88,26 @@
     line-height: 1.5;
 }
 
-/* ============================
-   RESPONSIVE UNTUK HP
-   ============================ */
+/* RESPONSIVE HP */
 @media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* kolom kanan turun */
+    }
+
     .welcome-section {
-        flex-direction: column; /* gambar pindah ke atas */
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
     }
 
     .welcome-section img {
-        width: 130px;       /* perkecil otomatis di HP */
-        margin: 0 auto;     /* center */
-        display: block;
+        width: 120px;
+        margin: 0 auto;
     }
 
     .text-box h1 {
-        font-size: 24px;    /* judul lebih pas di HP */
-        text-align: center;
-    }
-    
-    .text-box p {
-        text-align: justify;
-        font-size: 16px;
+        font-size: 22px;
     }
 }
-
 
     </style>
   
@@ -152,29 +160,25 @@
   </div>
 
   <!-- Konten -->
-  <main class="content">
+ <div class="content">
+    <div class="left-column">
 
-  <div class="welcome-section">
+        <div class="welcome-section">
+            <img src="img/logosekolah.png" alt="">
+            <div class="text-box">
+                <h1>Selamat Datang di SD Negeri Cimapag</h1>
+                <p>Assalamu’alaikum...</p>
+                <p>Selamat datang di website resmi...</p>
+            </div>
+        </div>
 
-      <img src="img/logosekolah.png" alt="Logo SD">
+    </div>
 
-      <div class="text-box">
-          <h1>Selamat Datang di SD Negeri Cimapag</h1>
+    <div class="right-column">
+        <!-- Info penting -->
+    </div>
+</div>
 
-          <p>Assalamu’alaikum warahmatullahi wabarakatuh..</p>
-
-          <p>Website ini kami hadirkan sebagai sarana informasi, 
-            komunikasi, dan publikasi kegiatan sekolah kepada masyarakat 
-            luas. Melalui situs ini, kami berkomitmen memberikan 
-            informasi terkini seputar kegiatan pembelajaran, pengumuman 
-            penting, prestasi siswa, dan inovasi sekolah. Terima kasih 
-            atas dukungan seluruh warga sekolah dan masyarakat yang 
-            selalu berpartisipasi aktif dalam meningkatkan mutu 
-            pendidikan di SD Negeri Cimapag.</p>
-          <p>Salam hangat, Kepala Sekolah SD Negeri Cimapag Siti Mariam, S.Pd.</p>
-      </div>
-
-  </div>
 
   <div class="right-section">
     <h2>Info Penting</h2>
@@ -229,11 +233,11 @@
   <i class="fa-solid fa-location-dot"></i>
   <span>
     Alamat: Jln. Cireunghas Kp. Nagrog RT 03/07<br>
-    Desa/Kec. Cireunghas-Sukabumi
+    Desa/Kec. Cireunghas-Sukabumi 43193
   </span>
 </p>
-      <p><i class="fa-solid fa-phone"></i> Telepon: 0812-3456-7890</p>
-      <p><i class="fa-solid fa-envelope"></i> Email: sdn.cimapag@example.com</p>
+      <p><i class="fa-solid fa-phone"></i> Telepon: -</p>
+      <p><i class="fa-solid fa-envelope"></i> Email: sdncimapag37@gmail.com</p>
     </div>
 
     <!-- KOLOM 2 -->
@@ -268,6 +272,7 @@
 
 </body>
 </html>
+
 
 
 
