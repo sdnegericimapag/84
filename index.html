@@ -26,6 +26,20 @@
           text-align: left;     /* ← supaya teks tidak center */
         }
 
+   .image-text {
+  display: flex;
+  align-items: flex-start; /* sejajarkan atas */
+  gap: 1rem; /* jarak antara gambar dan teks */
+}
+
+.image-text img {
+  flex-shrink: 0; /* gambar tidak mengecil */
+}
+
+.image-text .text {
+  flex: 1; /* teks mengambil sisa ruang di kanan */
+}
+
         /* Kolom kanan lebih kecil */
         .right-section {
           flex: 1;
@@ -219,6 +233,7 @@
 
 </body>
 </html>
+
 
 
 
