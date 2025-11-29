@@ -28,16 +28,14 @@
 
    .image-text {
   display: flex;
-  align-items: flex-start; /* sejajarkan atas */
+  align-items: center;   /* gambar dan teks rata tengah secara vertikal */
   gap: 1rem; /* jarak antara gambar dan teks */
 }
 
 .image-text img {
+  width: 150px;
+  height: auto;
   flex-shrink: 0; /* gambar tidak mengecil */
-}
-
-.image-text .text p {
-  margin-bottom: 0.8rem;
 }
 
 .image-text .text {
@@ -82,13 +80,13 @@
     color: #222;
   }
 
-  /* Paragraf */
-  .section-box p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-    font-family: "Poppins", sans-serif;
-  }
+ /* Paragraf */
+.section-box p {
+  font-size: 16px;              /* ukuran font paragraf */
+  color: #333;                  /* warna teks abu-abu gelap */
+  line-height: 1.6;             /* jarak antar baris agar nyaman dibaca */
+  font-family: "Poppins", sans-serif; /* jenis font */
+}
 
     </style>
   
@@ -152,13 +150,14 @@
     <div class="text">
     <p>Assalamu’alaikum warahmatullahi wabarakatuh.</p>
     <p>Selamat datang di website resmi SD Negeri Cimapag.
-    </p>Website ini kami hadirkan sebagai sarana informasi, komunikasi, dan publikasi kegiatan sekolah kepada masyarakat luas.</p>
+    <p>Website ini kami hadirkan sebagai sarana informasi, komunikasi, dan publikasi kegiatan sekolah kepada masyarakat luas.</p>
     <p>Melalui situs ini, kami berkomitmen memberikan informasi terkini seputar kegiatan pembelajaran, pengumuman penting, prestasi siswa, dan inovasi sekolah.</p>
-    </P>erima kasih atas dukungan seluruh warga sekolah dan masyarakat yang selalu berpartisipasi aktif dalam meningkatkan mutu pendidikan di SD Negeri Cimapag.</p>
-    <p>Salam hangat</p>
+    <P>erima kasih atas dukungan seluruh warga sekolah dan masyarakat yang selalu berpartisipasi aktif dalam meningkatkan mutu pendidikan di SD Negeri Cimapag.</p>
+    <p>Salam hangat,</p>
     <p>Kepala SD Negeri Cimapag</p>
     <p>Ibu Siti Mariam, S.Pd</p>
-    
+      </div>
+    </div>
   </div>
 
   <div class="right-section">
@@ -244,6 +243,7 @@
 
 </body>
 </html>
+
 
 
 
